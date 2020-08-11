@@ -1,0 +1,22 @@
+<div class="nav fixed">
+  <h3>Wikinimous</h3>
+  <%= link_to "Back", articles_path %>
+</div>
+
+<div class="form">
+  <h1 class="add-margin-top text-center">New Article</h1>
+
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    <br>
+    <%= f.submit 'Post', :class => 'btn' %>
+  <% end %>
+
+  <br>
+</div>
+
+
